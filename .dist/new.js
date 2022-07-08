@@ -10,3 +10,4 @@ function User (nome,email){
 
 const novoUser = new User("Juan"," j@j.com");
 console.log(novoUser.exibirInfos());
+
