@@ -6,7 +6,9 @@ class Admin extends User{
 
 
     }
-    
+    criarCurso(nomeDoCurso,vagas){
+        return 'Curso  ${nomeDoCurso} criado com sucesso';
+    }
 }
  const novoAdmin = new Admin("João", "j@j.com", "01/01/2000");
-    console.log(novoAdmin.exibirInfos());
+    console.log(novoAdmin.criarCurso('JS,20 vagas'));
