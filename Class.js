@@ -12,8 +12,21 @@ export default class User{
         this.#role = role || "estudante";
         this.#ativo = ativo;
     }
-    exibirInfos(){
-        return `Hi, I am ${this.#name}`, `My email is ${this.#email}`, `My birthdate is ${this.nascimento}`, `My role is ${this.role}`, `My status is ${this.ativo}`;
-    }
-}
 
+    #montaObjUser () {
+        return ({
+            name:this.#name,
+            email:this.#email,
+            nascimento:this.#nascimento,
+            role:this.#role,
+            ativo:this.#ativo
+
+
+        })
+    }
+    exibirInfos(){
+        const objUser = this.#montaObjUser();
+        return `Nome: ${objUser.name}, Email: ${objUser.email}, Nascimento: ${objUser.nascimento}, Role: ${objUser.role}, Ativo: ${objUser.ativo}`;
+
+}
+}
