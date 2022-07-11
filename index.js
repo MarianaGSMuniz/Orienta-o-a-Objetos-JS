@@ -7,4 +7,4 @@ const novoUser= new User("Mariana", "m@m.com", "01/01/2000");
 console.log(novoUser.exibirInfos());
 
 const novoAdmin= new Admin("Thiago", "t@t.com", "01/01/2000");
-console.log (novoAdmin.exibirInfos());
+console.log (novoAdmin.nome);

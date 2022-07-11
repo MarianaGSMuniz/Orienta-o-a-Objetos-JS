@@ -7,7 +7,7 @@ export default class Admin extends User{
 
     }
     criarCurso(nomeDoCurso,vagas){
-        return 'Curso  ${nomeDoCurso} criado com sucesso';
+     return 'Curso  ${nomeDoCurso} criado com sucesso';
     }
 }
  
