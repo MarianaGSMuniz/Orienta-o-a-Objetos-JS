@@ -28,10 +28,15 @@ export default class User{
     get ativo(){
         return this.#ativo;
     }
+    set name (newName){
+        if (newName === ''){
+            throw new Error('Nome não pode ser vazio');
+        }
+            this.#name = newName;
+    }
      
     exibirInfos(){
-        const objUser = this.#montaObjUser();
-        return `Nome: ${objUser.name}, Email: ${objUser.email}, Nascimento: ${objUser.nascimento}, Role: ${objUser.role}, Ativo: ${objUser.ativo}`;
+        return `Nome: ${this.name}, Email: ${this.email}, Nascimento: ${this.nascimento}, Role: ${this.role}, Ativo: ${this.ativo}`;
 
 }
 }
